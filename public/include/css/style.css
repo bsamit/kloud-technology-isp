@@ -1,0 +1,977 @@
+/*======================== Defult css Start ======================== */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.custom_container {
+    padding: 50px 100px;
+}
+p {
+    font-size: 15px;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #86bc42;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0rem;
+}
+@font-face {
+    font-family: "Hey August";
+    src: url(../fonts/Hey-August.woff);
+}
+
+@font-face {
+    font-family: "Bega-Light";
+    src: url(../fonts/Bega-Light.woff);
+}
+/*======================== Defult css End ======================== */
+
+/*======================== Header css Start ======================== */
+.kloud_header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-bottom: 2px solid #1bbcff;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(0, 132, 255);
+}
+.nav-link:focus,
+.nav-link:hover {
+    color: rgb(20 198 255);
+}
+.kloud_head_logo {
+    width: 250px;
+}
+.header_menu_list ul li a {
+    font-family: "Bega-Light";
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    margin-right: 15px;
+}
+.header_menu_list ul.dropdown-menu li a {
+    font-family: "Bega-Light";
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+}
+.custom_inner {
+    position: relative;
+}
+.custom_inner::after {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(to right, #0049ad, #732c2c00);
+    width: 70%;
+    height: 100%;
+    left: 0%;
+}
+.banner_caption {
+    top: 40%;
+    width: 35%;
+    text-align: start;
+    z-index: 99;
+}
+.banner_caption h5 {
+    font-family: "Bega-Light";
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    text-align: start;
+}
+.custome_btn {
+    font-family: "Bega-Light";
+    border: 1px solid white;
+    padding: 15px 50px;
+    color: white;
+    font-size: 20px;
+}
+.custome_btn:hover {
+    background-color: #00000000;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+}
+.key_highlight_sec {
+    padding: 8rem 0rem 6rem;
+    background-color: #e8f6f6;
+}
+.key_highlight {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    align-items: center;
+}
+.key_highlight_sec_img img {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+.key_highlight_sec_text h1 {
+    font-family: "Bega-Light";
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #222222;
+    text-transform: capitalize;
+}
+.key_highlight_sec_text p {
+    font-family: "Bega-Light";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 2rem;
+}
+.readmore_btn {
+    font-family: "Bega-Light";
+    padding: 12px 20px;
+    color: #000000;
+    font-size: 16px;
+    margin-top: 2rem;
+    border-bottom: 0;
+    transition: 0.5s ease-in-out;
+    border: 1px solid black;
+}
+.readmore_btn:hover {
+    color: #000000;
+}
+.title_heading h5 {
+    font-family: "Bega-Light";
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    background-clip: text;
+    padding: 3rem 0rem;
+}
+.title_heading .fa-caret-right {
+    color: #18beff;
+}
+.service_head h5 {
+    text-align: center;
+    font-family: "Bega-Light";
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 0rem;
+}
+.feature_lists_sec {
+    background-color: #000000a8;
+}
+.feature_lists {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    padding: 1rem 0rem 6rem;
+}
+.feature_lists_details {
+    padding: 4rem 2rem 3rem;
+    background-image: linear-gradient(#051234, #027ec3);
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.feature_lists_details:hover {
+    background-image: linear-gradient(#410b74, #163546);
+}
+.feature_lists_details .feture_icon {
+    font-size: 80px;
+    color: white;
+    margin-bottom: 2rem;
+}
+.feature_lists_details h5 {
+    font-family: "Bega-Light";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 1rem;
+}
+.feature_lists_details p {
+    font-family: "Bega-Light";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.discover_solutions_sec {
+    background-color: #fefbe8;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.title_heading_customer {
+    padding: 3rem 0rem;
+}
+.title_heading_customer h5 {
+    font-family: "Bega-Light";
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    background-clip: text;
+}
+.title_heading_customer p {
+    font-family: "Bega-Light";
+    font-size: 25px;
+}
+.customer_body {
+    background-color: #e8f6f6;
+    padding: 0rem 0rem 5rem;
+}
+.customer_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+.customer_section_details {
+    border-radius: 30px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+
+.customer_section_details img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+.customer_section_details h6 {
+    font-family: "Bega-Light";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+.customer_section_details p {
+    font-family: "Bega-Light";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+.customer_section_details_more {
+    float: right;
+}
+.customer_section_details_more h6 {
+    font-family: "Bega-Light";
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 25px;
+}
+.customer_section_details_more p {
+    font-family: "Bega-Light";
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+}
+
+.service_section_body {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5rem;
+}
+.customer_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    padding: 3rem 0rem 3rem;
+}
+.service_section_details {
+    border-radius: 30px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid rebeccapurple;
+    transition: 0.5s ease-in-out;
+}
+.service_section_details:hover {
+    transform: translateY(-10px);
+}
+
+.service_section_details img {
+    border-radius: 20%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+.service_section_details h6 {
+    font-family: "Bega-Light";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+.service_section_details p {
+    font-family: "Bega-Light";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+.service_section_details {
+    float: right;
+}
+.service_section_details h6 {
+    font-family: "Bega-Light";
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 25px;
+}
+.service_section_details p {
+    font-family: "Bega-Light";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: gray;
+}
+
+/* SERVICE-PAGE ==========================*/
+.custome_service_section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+.service_page_details {
+    border-radius: 30px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid rebeccapurple;
+    transition: 0.5s ease-in-out;
+    float: right;
+}
+.service_page_details:hover {
+    background-image: linear-gradient(#027ec3, #051234);
+    transform: translateY(-10px);
+    color: #ffffff;
+}
+.service_page_details:hover .readmore_btn {
+    color: white;
+    border: 1px solid white;
+}
+.service_page_details img {
+    border-radius: 20%;
+    width: auto;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+.service_page_details h6 {
+    font-family: "Bega-Light";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+.service_page_details p {
+    font-family: "Bega-Light";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+.service_page_details:hover p {
+    color: #ffffff;
+}
+
+/* ABOUT-US ==============================*/
+.banner_text {
+    position: relative;
+}
+.banner_text_details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner_text_details h5 {
+    font-family: "Bega-Light";
+    font-size: 70px;
+    font-weight: 600;
+    color: white;
+    background-clip: text;
+}
+.banner_text_details p {
+    font-family: "Bega-Light";
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+}
+
+.mission_section {
+    padding: 5rem 0rem;
+}
+.leadership_details img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.leadership_details h6 {
+    margin-bottom: 1rem;
+    font-family: "Bega-Light";
+    font-size: 18px;
+}
+.our_journey h5 {
+    color: #051234;
+}
+/* SERVICES PAGE =========================*/
+.our_journey {
+    background-color: #e8f6f6;
+    padding: 0rem 0rem 5rem;
+}
+/* PAKAGES-PAGE ======================================================*/
+.different_package_sec {
+    padding: 0rem 0rem 7rem;
+}
+
+.package_lists {
+    display: flex;
+    gap: 30px;
+}
+.ht-plan {
+    background: #e8fff7;
+    position: relative;
+    z-index: 2;
+}
+.ht-plan .shape-holder {
+    position: absolute;
+    right: 4px;
+    top: 1px;
+}
+.ht-plan .shape-holder .icon {
+    position: absolute;
+    right: 33px;
+    top: 43px;
+    width: 45px;
+}
+.ht-plan-inner {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px 5px 5px 1px;
+    border-color: #000;
+    padding: 45px 43px 40px 43px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.ht-plan-inner:hover {
+    background-color: #14c4ffb5;
+}
+.ht-plan-inner .plan-title {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    border: 1px solid #000000;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffff;
+}
+.ht-plan-inner .plan-price {
+    color: #000000;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 45px 0px;
+}
+.ht-plan-inner .plan-desc {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.ht-plan-inner .price-border {
+    height: 1px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    display: block;
+    margin-bottom: 38px;
+}
+.ht-plan-inner .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ht-plan-inner .feature-list li {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    font-family: "GeneralSans-Medium";
+    display: block;
+    padding-bottom: 6px;
+}
+.ht-plan-inner .feature-list li.price-available .check-mark {
+    color: #ff7f49;
+}
+.ht-plan-inner .feature-list li.unavailable {
+    color: rgba(0, 0, 0, 0.4);
+}
+.ht-plan-inner .feature-list li.unavailable .check-mark {
+    color: #ff7f49;
+}
+.ht-plan-inner .ht-btn {
+    padding-left: 35px;
+    padding-right: 30px;
+    display: inline-flex;
+    justify-content: space-between;
+    border-color: #000;
+    background: transparent;
+    border-width: 2px;
+    width: 100%;
+}
+.feature-list li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #ff7f49;
+}
+.feature-list li.unavailable::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #ff7f49;
+}
+.ht-plan-footer {
+    background-image: linear-gradient(#252525, #92abb5);
+    padding: 12px 20px;
+    margin-top: 2rem;
+    border-bottom: 0;
+    transition: 0.5s ease-in-out;
+    border-radius: 20px;
+}
+.ht-plan-footer:hover {
+    background-image: linear-gradient(#18beff, #8f18ff);
+    color: #000000;
+}
+.ht-plan-footer a:hover {
+    color: #000000;
+}
+.ht-plan-footer a {
+    color: white;
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+}
+
+.package_detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem;
+    background-image: url(../img/slider/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.package_detail_text h5 {
+    font-family: "Hey August";
+    font-size: 70px;
+    font-weight: 100;
+    color: #ffffff;
+}
+.package_detail_text p {
+    font-family: "Bega-Light";
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+/* Soluation Page =========================*/
+.service_heading h4 {
+    font-family: "Bega-Light";
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: #222222;
+    text-align: center;
+    text-transform: capitalize;
+}
+.service_heading p {
+    font-family: "Bega-Light";
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #222222;
+    text-align: center;
+    text-transform: capitalize;
+}
+.solution_sec {
+    background-color: #e8f6f6;
+}
+.solution_sec .title_heading h5 {
+    color: #051234;
+}
+.solution_sec .feature_lists_details {
+    padding: 4rem 2rem 3rem;
+    background-image: linear-gradient(#ffffff, #000000);
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.solution_sec .feature_lists_details:hover {
+    transform: translateY(-10px);
+}
+/* CONTACT-PAGE ==========================================*/
+.helpdesk_sec {
+    padding: 5rem 0rem 5rem;
+    background-image: url(../img/helpdesk.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.helpdesk_body_head h4 {
+    font-family: "Bega-Light";
+    font-size: 40px;
+    font-weight: 700;
+    color: #051234;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #ffffff;
+}
+.helpdesk_body_lists h4 {
+    font-family: "Bega-Light";
+    margin-bottom: 2rem;
+    font-size: 28px;
+    color: #e8f6f6;
+}
+.helpdesk_body_lists ul li {
+    font-family: "Bega-Light";
+    font-size: 18px;
+    color: #ffffff;
+}
+.helpdesk_body_lists {
+    display: flex;
+    justify-content: space-between;
+}
+.contact_address {
+    display: flex;
+    gap: 50px;
+    padding: 5rem 0rem;
+}
+.info-box2 {
+    text-align: center;
+    background: #f4f4f4;
+    border-radius: 15px;
+    padding: 40px 30px 30px 30px;
+    margin-bottom: 45px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.5s ease-in-out;
+}
+.info-box2:hover {
+    background-image: linear-gradient(to right, #ffffff, #000000ad);
+}
+.info-box2 .icon {
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(#8f18ff, #18beff);
+    border-radius: 50%;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.info-box2 .info-title {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Bega-Light";
+    margin-bottom: 20px;
+}
+.info-content a {
+    color: #000;
+}
+.google_map {
+    padding: 0rem 0rem 0rem;
+}
+.contact-send-message {
+    text-align: center;
+    padding-top: 40px;
+}
+.contact_from {
+    padding: 0rem 0rem 3rem;
+    background-color: #e8f6f6;
+}
+.contact-send-message h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #051234;
+}
+.contact-send-message p {
+    font-size: 16px;
+    color: #727272;
+    padding: 0 200px;
+    margin: 20px 0 60px 0;
+}
+.contact-send-message-form_input {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.contact-send-message-form_input input,
+.contact-send-message-form textarea {
+    width: 100%;
+    padding: 10px 18px;
+    border-radius: 25px;
+    border: 1px solid #ededed;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+    margin-bottom: 50px;
+}
+.contact-send-message-form_button {
+    text-align: center;
+}
+.contact-send-message-form_button button {
+    margin: 10px 0;
+    padding: 8px 20px;
+    background: transparent;
+    border: 2px solid #051234;
+    border-radius: 25px;
+    color: #051234;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease,
+        border-color 0.3s ease;
+}
+/* FOOTER SECTION ===================================================*/
+.footer .footer_main {
+    align-items: center;
+}
+.footer {
+    background-image: linear-gradient(to right, #838383 0%, #051234 30%);
+    padding: 3rem;
+    color: white;
+}
+.footer_logo img {
+    width: 250px;
+}
+.footet_quick_link ul,
+.footet_social_link ul {
+    padding: 0;
+}
+.footet_quick_link ul li {
+    line-height: 25px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+    color: #bababa;
+    font-size: 15px;
+}
+.footet_quick_link ul li a {
+    color: #bababa;
+    transition: 0.5s ease-in-out;
+}
+.footet_quick_link ul li a:hover {
+    color: #5282ca;
+}
+.footet_quick_link ul li .footer_icon {
+    margin-right: 15px;
+    color: #5282ca;
+}
+.footet_quick_link ul li a {
+    font-family: "Bega-Light";
+}
+.footet_quick_link ul li a::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #5282ca;
+}
+.footet_quick_link h6,
+.footet_social_link h6 {
+    font-family: "Bega-Light";
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+.footet_social_link ul {
+    display: flex;
+}
+.footet_social_link ul li {
+    padding-right: 10px;
+    font-size: 30px;
+}
+.footet_social_link ul li a {
+    font-family: "Bega-Light";
+    color: #bababa;
+}
+.bottom_footer {
+    background-color: black;
+}
+.bottom_footer p {
+    font-family: "Bega-Light";
+    color: #bababa;
+    text-align: center;
+    padding: 15px;
+}
+/*======================== Responsive Start ======================== */
+@media screen and (min-device-width: 1440px) and (max-device-width: 1880px) {
+}
+
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1024px) {
+    .banner_caption {
+        top: 28%;
+        width: 80%;
+    }
+    .package_detail {
+        padding: 5rem;
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+}
+@media screen and (max-width: 991px) {
+    .custome_btn{
+        padding: 7px 26px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #carouselExampleCaptions{
+        margin-top:75px
+    }
+    .banner_text{
+        margin-top: 75px;
+    }
+    .service_section_body{
+        padding: 1rem;
+    }
+    .discover_solutions_sec {
+        padding: 1rem 0rem 1rem;
+    }
+    .feature_lists,
+    .key_highlight {
+        display: block;
+    }
+
+    .key_highlight_sec_img {
+        margin-top: 50px;
+        text-align: left;
+    }
+    .feature_lists_details {
+        margin-bottom: 20px;
+    }
+    .customer_section {
+        padding: 1rem 0rem 1rem;
+        gap: 0;
+    }
+    .image-bottom{
+        margin-top:20px
+    }
+    .banner_caption {
+        top: 20%;
+    }
+    .banner_caption h5{
+        font-size: 25px;
+    }
+    .banner_text_details{
+        width: 100%;
+    }
+    .banner_text_details h5 {
+        font-size: 40px;
+    }
+    .banner_text_details p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .mission_section {
+        padding: 1rem 0rem;
+    }
+    .custome_service_section {
+        display: block;
+    }
+    .service_page_details {
+        margin-top: 30px;
+        padding: 1rem;
+        width: 100%;
+    }
+    .package_detail_text h5 {
+        font-size: 60px;
+    }
+    .contact_address {
+        flex-direction: column;
+        gap: 9px;
+    padding: 1rem 0rem;
+    }
+    .contact-send-message-form_input {
+        display: block;
+        gap: 0;
+    }
+    .contact-send-message-form_input input, .contact-send-message-form textarea{
+        margin-bottom: 10px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 375px) {
+}
